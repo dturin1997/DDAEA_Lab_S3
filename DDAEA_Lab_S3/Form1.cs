@@ -25,7 +25,8 @@ namespace DDAEA_Lab_S3
 
         }
 
-        private void btnConectar_Click(object sender, EventArgs e)
+
+        private void btnConectar_Click_1(object sender, EventArgs e)
         {
             //Declaramos variables para almacenar los valores de los TextBox
             //y definimos una cadena de conexion
@@ -34,7 +35,7 @@ namespace DDAEA_Lab_S3
             String user = txtUsuario.Text;
             String pwd = txtPassword.Text;
 
-            String str = "Server="+servidor+";DataBase="+bd+";";
+            String str = "Server=" + servidor + ";DataBase=" + bd + ";";
 
             //La cadena de conexion cambia en funcion del estado del CheckBox
             if (chkAutenticacion.Checked)
@@ -50,13 +51,32 @@ namespace DDAEA_Lab_S3
                 MessageBox.Show("Conectado satisfactoriamente");
                 btnDesconectar.Enabled = true;
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show("Error al conectar el servidor: \n" + ex.ToString());
             }
 
 
 
+        }
+
+        private void btnDesconectar_Click(object sender, EventArgs e)
+        {
+            //Para cerrar la coneción verificamos que no este cerrada
+            try
+            {
+                if (conn.State != ConnectionState.Closed)
+                {
+                    conn.Close();
+                    MessageBox.Show("Conexión cerrada satisfactoriamente");
+                }
+                else
+                    MessageBox.Show("La conexión ya esta cerrado");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error al cerrar la conexión: \n" + ex.ToString());
+            }
         }
     }
 }
