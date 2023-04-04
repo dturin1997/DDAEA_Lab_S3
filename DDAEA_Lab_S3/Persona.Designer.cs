@@ -37,27 +37,27 @@
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(46, 12);
+            this.btnListar.Location = new System.Drawing.Point(12, 12);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(75, 23);
+            this.btnListar.Size = new System.Drawing.Size(103, 23);
             this.btnListar.TabIndex = 0;
-            this.btnListar.Text = "button1";
+            this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(388, 11);
+            this.btnBuscar.Location = new System.Drawing.Point(337, 13);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 1;
-            this.btnBuscar.Text = "button2";
+            this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(186, 14);
+            this.txtNombre.Location = new System.Drawing.Point(180, 15);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(151, 20);
             this.txtNombre.TabIndex = 2;
             // 
             // dgvListado

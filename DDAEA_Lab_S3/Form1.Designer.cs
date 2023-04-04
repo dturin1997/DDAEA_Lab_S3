@@ -40,6 +40,7 @@
             this.btnConectar = new System.Windows.Forms.Button();
             this.btnEstado = new System.Windows.Forms.Button();
             this.btnDesconectar = new System.Windows.Forms.Button();
+            this.btnPersona = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -152,11 +153,21 @@
             this.btnDesconectar.UseVisualStyleBackColor = true;
             this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
             // 
+            // btnPersona
+            // 
+            this.btnPersona.Location = new System.Drawing.Point(177, 230);
+            this.btnPersona.Name = "btnPersona";
+            this.btnPersona.Size = new System.Drawing.Size(104, 23);
+            this.btnPersona.TabIndex = 12;
+            this.btnPersona.Text = "Personas";
+            this.btnPersona.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(455, 237);
+            this.ClientSize = new System.Drawing.Size(455, 265);
+            this.Controls.Add(this.btnPersona);
             this.Controls.Add(this.btnDesconectar);
             this.Controls.Add(this.btnEstado);
             this.Controls.Add(this.btnConectar);
@@ -191,6 +202,7 @@
         private System.Windows.Forms.Button btnConectar;
         private System.Windows.Forms.Button btnEstado;
         private System.Windows.Forms.Button btnDesconectar;
+        private System.Windows.Forms.Button btnPersona;
     }
 }
 
