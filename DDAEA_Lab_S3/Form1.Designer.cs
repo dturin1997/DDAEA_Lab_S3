@@ -119,6 +119,7 @@
             this.chkAutenticacion.TabIndex = 8;
             this.chkAutenticacion.Text = "Autenticación integrada";
             this.chkAutenticacion.UseVisualStyleBackColor = true;
+            this.chkAutenticacion.CheckedChanged += new System.EventHandler(this.chkAutenticacion_CheckedChanged);
             // 
             // btnConectar
             // 
@@ -138,6 +139,7 @@
             this.btnEstado.TabIndex = 10;
             this.btnEstado.Text = "Estado";
             this.btnEstado.UseVisualStyleBackColor = true;
+            this.btnEstado.Click += new System.EventHandler(this.btnEstado_Click);
             // 
             // btnDesconectar
             // 
