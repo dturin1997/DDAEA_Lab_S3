@@ -79,6 +79,7 @@
             this.Controls.Add(this.btnListar);
             this.Name = "Persona";
             this.Text = "Persona";
+            this.Load += new System.EventHandler(this.Persona_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
