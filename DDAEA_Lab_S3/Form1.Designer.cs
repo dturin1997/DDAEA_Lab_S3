@@ -128,7 +128,6 @@
             this.btnConectar.TabIndex = 9;
             this.btnConectar.Text = "Conectar";
             this.btnConectar.UseVisualStyleBackColor = true;
-            
             // 
             // btnEstado
             // 
@@ -138,6 +137,7 @@
             this.btnEstado.TabIndex = 10;
             this.btnEstado.Text = "Estado";
             this.btnEstado.UseVisualStyleBackColor = true;
+            this.btnEstado.Click += new System.EventHandler(this.btnEstado_Click);
             // 
             // btnDesconectar
             // 
@@ -167,7 +167,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Conexión a un origen de datos";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

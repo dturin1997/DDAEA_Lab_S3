@@ -58,5 +58,26 @@ namespace DDAEA_Lab_S3
 
 
         }
+
+        private void btnEstado_Click(object sender, EventArgs e)
+        {
+            //Intentamos obtener el estado de la conexion, y en caso esté abierta,
+            //recuperamos informacion de la misma
+            try
+            {
+                if (conn.State == ConnectionState.Open)
+                    MessageBox.Show("Estado del servidor: " + conn.State +
+                        "\nVersion del servidor: " + conn.ServerVersion +
+                        "\nBase de datos: " + conn.Database);
+                else
+                    MessageBox.Show("Estado del servidor: "+ conn.State);
+
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show("Imposible determinar el estado del servidor: \n" +
+                    ex.ToString());
+            }
+        }
     }
 }
