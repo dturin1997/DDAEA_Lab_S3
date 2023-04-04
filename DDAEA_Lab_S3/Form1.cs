@@ -12,6 +12,7 @@ namespace DDAEA_Lab_S3
 {
     public partial class Form1 : Form
     {
+        //Hola
         public Form1()
         {
             InitializeComponent();
