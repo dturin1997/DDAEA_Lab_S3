@@ -37,7 +37,7 @@
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(12, 12);
+            this.btnListar.Location = new System.Drawing.Point(14, 22);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(103, 23);
             this.btnListar.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(337, 13);
+            this.btnBuscar.Location = new System.Drawing.Point(324, 22);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 1;
@@ -55,24 +55,24 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(180, 15);
+            this.txtNombre.Location = new System.Drawing.Point(161, 24);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(151, 20);
+            this.txtNombre.Size = new System.Drawing.Size(157, 20);
             this.txtNombre.TabIndex = 2;
             // 
             // dgvListado
             // 
             this.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListado.Location = new System.Drawing.Point(46, 64);
+            this.dgvListado.Location = new System.Drawing.Point(12, 60);
             this.dgvListado.Name = "dgvListado";
-            this.dgvListado.Size = new System.Drawing.Size(417, 349);
+            this.dgvListado.Size = new System.Drawing.Size(387, 378);
             this.dgvListado.TabIndex = 3;
             // 
             // Persona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(621, 450);
+            this.ClientSize = new System.Drawing.Size(413, 450);
             this.Controls.Add(this.dgvListado);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnBuscar);
