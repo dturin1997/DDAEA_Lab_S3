@@ -28,12 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnListar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.dgvListado = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // btnListar
+            // 
+            this.btnListar.Location = new System.Drawing.Point(46, 12);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(75, 23);
+            this.btnListar.TabIndex = 0;
+            this.btnListar.Text = "button1";
+            this.btnListar.UseVisualStyleBackColor = true;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(388, 11);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 1;
+            this.btnBuscar.Text = "button2";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(186, 14);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 2;
+            // 
+            // dgvListado
+            // 
+            this.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListado.Location = new System.Drawing.Point(46, 64);
+            this.dgvListado.Name = "dgvListado";
+            this.dgvListado.Size = new System.Drawing.Size(417, 349);
+            this.dgvListado.TabIndex = 3;
+            // 
+            // Persona
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(621, 450);
+            this.Controls.Add(this.dgvListado);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.btnListar);
+            this.Name = "Persona";
             this.Text = "Persona";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnListar;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.DataGridView dgvListado;
     }
 }
