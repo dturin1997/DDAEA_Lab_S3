@@ -14,7 +14,7 @@ namespace DDAEA_Lab_S3
     public partial class Persona : Form
     {
         SqlConnection conn;
-        public Persona()
+        public Persona(SqlConnection conn)
         {
             this.conn = conn;
             InitializeComponent();
@@ -24,10 +24,6 @@ namespace DDAEA_Lab_S3
         {
 
         }
-        private void btnPersona_Click(object sender, EventArgs e)
-        {
-            Persona persona = new Persona(conn);
-            persona.Show();
-        }
+
     }
 }

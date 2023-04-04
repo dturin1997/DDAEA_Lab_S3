@@ -114,5 +114,11 @@ namespace DDAEA_Lab_S3
                 MessageBox.Show("Ocurrió un error al cerrar la conexión: \n" + ex.ToString());
             }
         }
+
+        private void btnPersona_Click(object sender, EventArgs e)
+        {
+            Persona persona = new Persona(conn);
+            persona.Show();
+        }
     }
 }
