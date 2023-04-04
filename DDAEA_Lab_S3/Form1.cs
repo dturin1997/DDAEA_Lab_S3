@@ -79,5 +79,20 @@ namespace DDAEA_Lab_S3
                     ex.ToString());
             }
         }
+
+        private void chkAutenticacion_CheckedChanged(object sender, EventArgs e)
+        {
+            if(chkAutenticacion.Checked)
+            {
+                txtUsuario.Enabled = false;
+                txtPassword.Enabled = false;
+            }
+            else
+            {
+                txtUsuario.Enabled = true;
+                txtPassword.Enabled = true;
+            }
+
+        }
     }
 }
