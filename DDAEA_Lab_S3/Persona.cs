@@ -25,5 +25,26 @@ namespace DDAEA_Lab_S3
 
         }
 
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            if (conn.State == ConnectionState.Open)
+            {
+                String sql = "SELECT * FROM tbl_usuario";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                DataTable dt = new DataTable();
+                dt.Load(reader);
+                dgvListado.DataSource = dt;
+                dgvListado.Refresh();
+                
+}
+            else
+            {
+                MessageBox.Show("La conexion esta cerrada");
+            }
+
+
+        }
     }
 }
